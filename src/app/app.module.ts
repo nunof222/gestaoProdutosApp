@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListaprodutosComponent } from './Components/listaprodutos/listaprodutos.component';
 import { CreateNewProductComponent } from './Components/create-new-product/create-new-product.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
