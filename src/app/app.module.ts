@@ -7,18 +7,26 @@ import { ListaprodutosComponent } from './Components/listaprodutos/listaprodutos
 import { CreateNewProductComponent } from './Components/create-new-product/create-new-product.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatCommonModule } from '@angular/material/core';
+import { MatIconModule } from '@angular/material/icon'; 
+import { MatListModule } from '@angular/material/list';
+import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaprodutosComponent,
     CreateNewProductComponent,
-    DashboardComponent
+    DashboardComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCommonModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

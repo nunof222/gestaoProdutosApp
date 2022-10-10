@@ -1,4 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+html
+{ 
+ background: url(src/assets/skylinebg-1080.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+ min-height: 100%;
+ max-width: 100%;
+ 
+      
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
