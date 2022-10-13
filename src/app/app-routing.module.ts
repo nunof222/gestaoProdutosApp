@@ -4,11 +4,13 @@ import { CreateNewProductComponent } from './Components/create-new-product/creat
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 
+
 const routes: Routes = [
 {path:'dashboard', component: DashboardComponent},
 {path:'create-product', component: CreateNewProductComponent},
 {path:'', redirectTo:'/dashboard', pathMatch:'full'},           //set default page to Dashboard
-{path:'**', component: PagenotfoundComponent}
+{path:'**', component: PagenotfoundComponent},
+
 
 ];
 

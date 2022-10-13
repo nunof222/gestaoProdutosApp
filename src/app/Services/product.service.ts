@@ -12,19 +12,27 @@ export class ProductService {
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json'})  // constructs a new HTTP header object which accepts JSON data
-  };
+  }
 
 
 
   constructor(private http:HttpClient) { }
 
   getProducts(): Observable<Product[]> {                 // get products method
-    return this.http.get<Product[]> (this.backUrl)
+    return this.http.get<Product[]> (this.backUrl);
 
   }
 
-  getProduct(id:number): Observable<Product> {   // single product method
+  getProduct(id:string): Observable<Product> {   // single product method
     const url = `${this.backUrl}${id}`;
-    return this.http.get<Product>(url)
+    return this.http.get<Product>(url);
+  }
+
+  addProduct(product: Product): Observable<Product> { 
+    return this.http.post<Product>(
+    this.backUrl,
+    product,
+    this.httpOptions
+    )
   }
 }

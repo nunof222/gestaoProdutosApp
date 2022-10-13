@@ -11,6 +11,9 @@ import { MatCommonModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatListModule } from '@angular/material/list';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.co
     CreateNewProductComponent,
     DashboardComponent,
     PagenotfoundComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,10 @@ import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.co
     MatToolbarModule,
     MatCommonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    LayoutModule,
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
