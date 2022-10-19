@@ -28,7 +28,7 @@ export class ProductService {
     return this.http.get<Product>(url);
   }
 
-  addProduct(product: Product): Observable<Product> { 
+  addProduct(product: Product): Observable<Product> { //create new product
     return this.http.post<Product>(
     this.backUrl,
     product,
