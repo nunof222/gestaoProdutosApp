@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatTableModule } from'@angular/material/table';
 
 
 
@@ -35,7 +36,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatListModule,
     LayoutModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
