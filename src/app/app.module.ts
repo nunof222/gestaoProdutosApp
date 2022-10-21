@@ -15,7 +15,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatTableModule } from'@angular/material/table';
-
+import { HttpClientModule } from '@angular/common/http';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatBadgeModule } from '@angular/material/badge'; 
 
 
 @NgModule({
@@ -37,7 +41,12 @@ import { MatTableModule } from'@angular/material/table';
     LayoutModule,
     MatButtonModule,
     MatSidenavModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

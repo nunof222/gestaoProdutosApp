@@ -1,11 +1,23 @@
 <p>
     <mat-toolbar>
-      <button mat-icon-button class="menu-icon" aria-label="menu icon">
-          <mat-icon fontIcon="menu" class="matNavMenu" color="primary">Menu</mat-icon>
-      </button>
+
       <section class="mat-typography">
       <span class="welcomeText"><h1>Welcome to our Store!</h1></span>
     </section>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon 
+          [matBadge]="1"
+          matBadgeColor="warn" 
+      >shopping_cart</mat-icon> 
+  </button>
+      <mat-menu #menu= "matMenu">
+          <div class="p-3 divide-y divide-solid">
+
+          </div>
+
+      </mat-menu>
     </mat-toolbar>
   </p>
 
