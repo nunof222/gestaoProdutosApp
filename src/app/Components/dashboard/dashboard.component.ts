@@ -3,6 +3,7 @@ import { Product } from 'src/app/Domain/product';
 import { ProductService } from 'src/app/Services/product.service';
 
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -10,16 +11,19 @@ import { ProductService } from 'src/app/Services/product.service';
 })
 export class DashboardComponent implements OnInit {
   productData:Product[] = [];                                //initialize product array
-  displayedColumns= ['name', 'category', 'price']
+  displayedColumns= ['name', 'category', 'price'];
+
   
   constructor(private product: ProductService) {
     this.product.getProducts().subscribe(x=>{ 
       this.productData = x;
-      console.log(this.productData);
+      // console.log(this.productData);
     } )
    }
 
   ngOnInit(): void {
+    this.product.getProducts();
+  
   }
 
 }

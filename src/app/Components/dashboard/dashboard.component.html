@@ -1,5 +1,8 @@
 <div class="mat-elevation-z8">
-
+  <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput placeholder="Search columns" #input>
+  </mat-form-field>
 
     <table mat-table [dataSource]="productData"> 
 
@@ -29,8 +32,6 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
 
-      <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-      showFirstLastButtons 
-      aria-label="Select page of products">
-      </mat-paginator> -->
+    
   </div>
+

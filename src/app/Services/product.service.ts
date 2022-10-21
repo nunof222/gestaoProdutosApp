@@ -30,9 +30,8 @@ export class ProductService {
 
   addProduct(product: Product): Observable<Product> { //create new product
     return this.http.post<Product>(
-    this.backUrl,
-    product,
-    this.httpOptions
-    )
+    this.backUrl, product,
+    this.httpOptions);
   }
 }
+

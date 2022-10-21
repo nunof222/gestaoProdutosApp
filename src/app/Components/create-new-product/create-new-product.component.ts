@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/Domain/product';
+import { ProductService } from 'src/app/Services/product.service';
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-create-new-product',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateNewProductComponent implements OnInit {
 
-  constructor() { }
+  @Input() product: Product = {name:"", category:"", price:0}
+   
+
+  constructor(private productsv: ProductService) {
+   
+    
+
+   }
 
   ngOnInit(): void {
+    
   }
+  addProduct(): void {
+    this.productsv.addProduct(this.product).subscribe(()=> {
+      console.log(this.product)
+    });;
 
+   
+
+  };
 }
+

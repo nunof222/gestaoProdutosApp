@@ -12,3 +12,25 @@
     display: flex;
 
 }
+
+.mat-nav-list .mat-list-item{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.875);
+    width: auto;
+    display:flex;
+    /* justify-content: center; */
+}
+
+.mat-list-item:hover{
+    color: rgb(9, 57, 232);
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+  }
+  

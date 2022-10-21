@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListaprodutosComponent } from './Components/listaprodutos/listaprodutos.component';
 import { CreateNewProductComponent } from './Components/create-new-product/create-new-product.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
@@ -19,13 +18,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatBadgeModule } from '@angular/material/badge'; 
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatInputModule } from '@angular/material/input'
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaprodutosComponent,
     CreateNewProductComponent,
     DashboardComponent,
     PagenotfoundComponent
@@ -46,7 +45,9 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatPaginatorModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,26 @@
-<p>create-new-product works!</p>
+<p>
+  Add a New Product to our Catalog
+</p>
+
+<table>
+  
+  <tr>
+      <th> <label for="new-name"></label> </th>
+      <td> <input id="new-name" [(ngModel)]="product.name" placeholder="name"/> </td>                              
+
+  </tr>
+  <tr>
+    <th> <label for="new-category"></label> </th>
+    <td> <input id="new-category" [(ngModel)]="product.category" placeholder="category"/> </td>                              
+
+</tr>
+
+<tr>
+  <th> <label for="new-price"></label> </th>
+  <td> <input id="new-price" [(ngModel)]="product.price" placeholder="price"/> </td>                              
+
+</tr>
+
+<tr> <td colspan="3">  <button type="button" (click)="addProduct()" >Add Product </button> </td>  </tr>
+
+</table>
