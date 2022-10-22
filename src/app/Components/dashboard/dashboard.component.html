@@ -1,10 +1,10 @@
 <div class="mat-elevation-z8">
   <mat-form-field appearance="standard">
     <mat-label>Filter</mat-label>
-    <input matInput placeholder="Search columns" #input>
+    <input [(ngModel)]="productFilter" matInput placeholder="Search products by category - ex: drinks, cookies" #input >
   </mat-form-field>
 
-    <table mat-table [dataSource]="productData"> 
+    <table mat-table [dataSource]="productData|search: productFilter"> 
 
         <!--- Note that these columns can be defined in any order.
               The actual rendered columns are set as a property on the row definition" -->

@@ -24,7 +24,8 @@ export class CreateNewProductComponent implements OnInit {
   }
   addProduct(): void {
     this.productsv.addProduct(this.product).subscribe(()=> {
-      console.log(this.product)
+      console.log(this.product);
+      alert("product added!");
     });;
 
    

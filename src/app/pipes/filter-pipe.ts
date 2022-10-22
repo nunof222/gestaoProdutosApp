@@ -11,7 +11,11 @@ export class SearchPipe implements PipeTransform {
     if(!category){
       return value;
 }
-    return value.filter((product)=> product.category === category)
+    console.log(category)
+    return value.filter((product)=> product.category.toLowerCase() === category.toLowerCase())
+    
+
+    
     
 }
 

@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatInputModule } from '@angular/material/input'
+import { SearchPipe } from './pipes/filter-pipe';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatInputModule } from '@angular/material/input'
     AppComponent,
     CreateNewProductComponent,
     DashboardComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    SearchPipe
     
   ],
   imports: [
@@ -47,7 +49,8 @@ import { MatInputModule } from '@angular/material/input'
     MatMenuModule,
     MatBadgeModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
