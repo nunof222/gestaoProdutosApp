@@ -11,7 +11,8 @@ export class SearchPipe implements PipeTransform {
     if(!category){
       return value;
 }
-    return value.filter(Product => Product.category.startsWith(category));
+    return value.filter((product)=> product.category === category)
+    
 }
 
 
